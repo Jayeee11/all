@@ -48,10 +48,12 @@
   }
 
   @font-face {
-    font-family: 'cookie';
-    src: url('CookieRun\ Bold.otf') format('truetype'); 
-}
-
-body {
-	font-family: 'cookie';
-}
+    font-family: 'CookieRun';
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.ttf') format("truetype");
+    font-display: swap;
+} 

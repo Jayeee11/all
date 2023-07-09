@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'CookieRun';
-    font-weight: 400;
+    src: url('CookieRun-Bold.eot');
+    src: url('CookieRun-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CookieRun-Bold.woff2') format('woff2'),
+        url('CookieRun-Bold.woff') format('woff'),
+        url('CookieRun-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.ttf') format("truetype");
     font-display: swap;
-} 
+}
 
 *{
     margin:0; padding:0;

@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <link rel="stylesheet" href="style.css">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no, maximum-scale=1, minimum-scale=1." >
+    <meta name="viewport" content="width=device-width, initial-scale=0.6 user-scalable=no, maximum-scale=0.6, minimum-scale=0.6." >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <meta property="og:title" content="쿠키런 조합표" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://i.imgur.com/uA9WyGL.jpg" />
@@ -14,322 +16,446 @@
     <meta name="twitter:description" content="각 아레나 누르면 유튜브 영상으로 이동" />
     <meta name="twitter:image" content="https://i.imgur.com/OHkxJwV.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>쿠키런 조합표</title>
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-</head> 
-
-<div class="wrap">
-    <!--tab 버튼-->
-    <ul class="tab_btn">
-      <li class="active"><a href="#tab01">
-        <p>
-          <span>🍪</span>길드전
-        </p>
-      </a></li>
-      <li><a href="#tab02">
-        <p>
-          <span>🍪</span > 챔스
-        </p>
-      </a></li>
-      
-      <li><a href="#tab03">
-        <p>
-          <span>🍪</span> <span style="font-size: 90%;">타이틀 이벤트</span>
-        </p>
-      </a></li>
-      
-      <li><a href="#tab04">
-        <p>
-          <span>🍪</span> 떼탈출
-        </p>
-      </a></li>
-      <li><a href="#tab05">
-        <p>
-          <span>🍪</span> 기타정보
-        </p>
-      </a></li>
-    </ul>
+</head>
+<body>
     
-    <!--tab 내용-->
-    <div class="tab_container">
-      <div class="content" id="tab01">
-        <div id="조합표.jpg">
-          <img src="조합표.jpg" style="width:600px; margin:0px;"/>
-          <button class="btn1" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/KQPpZZo4Px4'">arena1</button>
-          <button class="btn2" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/QgvX_nDFbnU'">arena2</button>
-          <button class="btn3" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/oRsDyghWOJE'">arena3</button>
-          <button class="btn4" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena4</button>
-          <button class="btn5" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena5</button>
-          <button class="btn6" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena6</button>
-          <button class="btn7" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena7</button>
-          <button class="btn8" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena8</button>
-          <button class="btn9" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena9</button>
-          <button class="btn10" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena10</button>
-          <button class="btn11" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena11</button>
-          <button class="btn12" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/81_bqciV4RI'">arena12</button>
-        </div>
-        <style>
-          button.btn1 {
-            position: absolute;
-            top: 230px;
-            left : 22px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }ackground  :#ffffff 
-          }
-          button.btn2 {
-            position: absolute;
-            top: 355px;
-            left : 22px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn3 {
-            position: absolute;
-            top: 475px;
-            left : 22px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn4 {
-            position: absolute;
-            top: 595px;
-            left : 22px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn5 {
-            position: absolute;
-            top: 715px;
-            left : 22px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn6 {
-            position: absolute;
-            top: 840px;
-            left : 22px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn7 {
-            position: absolute;
-            top: 230px;
-            left : 313px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn8 {
-            position: absolute;
-            top: 355px;
-            left : 313px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn9 {
-            position: absolute;
-            top: 475px;
-            left : 313px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn10 {
-            position: absolute;
-            top: 595px;
-            left : 313px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn11 {
-            position: absolute;
-            top: 715px;
-            left : 313px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-          button.btn12 {
-            position: absolute;
-            top: 840px;
-            left : 313px; 
-            border-radius: 10px;
-            width: 265px;
-            height: 105px;
-            opacity:0;
-          }
-  
-           </style>
-                </,div>
-      </div>
-      <div class="content" id="tab02">
-        <div>
-          내용02 내용02 내용02 내용02 내용02 내용02
-        </div>
-      </div>
-      <div class="content" id="tab03">
-        <div>
-          내용03 내용03 내용03 내용03 내용03 내용03
-        </div>
-      </div>
-      <div class="content" id="tab04">
-        <div>
-          내용04 내용04 내용04 내용04 내용04 내용04
-        </div>
-      </div>
-      <div class="content" id="tab05" >
-        <div>
-          <div class="wrap">
-            <!--tab 버튼-->
-            <ul class="sub_tab_btn">
-              <li class="active"><a href="#sub_tab01">
-                <p>
-                  <span>🍪</span>길드전
-                </p>
-              </a></li>
-              <li><a href="#sub_tab02">
-                <p>
-                  <span>🍪</span > 챔스
-                </p>
-              </a></li>
-              
-              <li><a href="#sub_tab03">
-                <p>
-                  <span>🍪</span> 떼탈출
-                </p>
-              </a></li>
-              
-              <li><a href="#sub_tab04">
-                <p>
-                  <span>🍪</span> 타이틀
-                </p>
-              </a></li>
-              <li><a href="#sub_tab05">
-                <p>
-                  <span>🍪</span> 기타정보
-                </p>
-              </a></li>
-            </ul>
-            
-            <!--tab 내용-->
-            <div class="sub_tab_container">
-              <div class="content" id="sub_tab01">
-                <div>
-                  내용01 내용01 내용01 내용01 내용01 내용01
-                </div>
-              </div>
-              <div class="content" id="sub_tab02">
-                <div>
-                  내용02 내용02 내용02 내용02 내용02 내용02
-                </div>
-              </div>
-              <div class="content" id="sub_tab03">
-                <div>
-                  내용03 내용03 내용03 내용03 내용03 내용03
-                </div>
-              </div>
-              <div class="content" id="sub_tab04">
-                <div>
-                  내용04 내용04 내용04 내용04 내용04 내용04
-                </div>
-              </div>
-              <div class="content" id="sub_tab05">
-                <div>
-                  내용01 내용01 내용01 내용01 내용01 내용01
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <main class="container">
+        <ul class="tab_menu">
+                      <!-- 이미지 이름: [비활성화 상태의 이미지는 _off] | [활성화 상태의 이미지는 _on]  -->
+            <li data-tab="tab-1" class="on"><img src="./img/2_off.png"style="width:600px; margin:0px;"/ alt="">
+              <span style="margin-left:-5px;">
+              🍪 길드전
+            </span>
+          </li>
+            <li data-tab="tab-2"><img src="./img/2_off.png" alt="">
+              <span style="margin-left:-5px;">
+                🍪 챔스
+              </span>
+            </li>
+            <li data-tab="tab-3"><img src="./img/3_off.png" alt="">
+              <span style="margin-left:-5px;">
+              🍪 타이틀
+              </span>
+            </li>
+            <li data-tab="tab-4"><img src="./img/4_off.png" alt="">
+              <span style="margin-left:-5px;">
+                🍪 떼탈출
+              </span>
+            </li>
+            <li data-tab="tab-5"><img src="./img/5_off.png" alt="">
+              <span style="margin-left:-5px;">
+                🍪 다른정보
+              </span>
+            </li>
+        </ul>
+        <ul class="tab_content">
+            <li id="tab-1" class="on">
+              <div data-tab="tab-1" class="on"><img src="조합표.jpg"style="width:600px; margin:0px;"/ alt="">
+                <button class="btn1" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/X1gUlR2I3hk?si=j9t5W0hlg91gUeka'">arena1</button>
+                <button class="btn7" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/ykaOsnAoSvs?si=r5gQiREyeBp61lZ6'">arena2</button>
+                <button class="btn2" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/9y6lMjYHQUw?si=Wpi_0Jxun6HBEWXf'">arena3</button>
+                <button class="btn8" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/3RGaKx8-RgU?si=6WYrQuBo5aXPNXii'">arena4</button>
+                <button class="btn3" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/2-kFO-R001I?si=5HgtTm3lRN1XRur3'">arena5</button>
+                <button class="btn9" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/1i3mXQ-FR6s?si=7ifTYWvdXHYm4R2E'">arena6</button>
+                <button class="btn4" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/Vhp73ZlvEvM?si=fcc7Yof1nKcMyhWJ'">arena7</button>
+                <button class="btn10" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/YoXxGGb-I3U?si=FhApmZEmdQ5m2H9a'">arena8</button>
+                <button class="btn5" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/LfTnDCG6uAg?si=GqaX3dfFA-tyNM1n'">arena9</button>
+                <button class="btn11" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/4cMoe5sW3-k?si=Ab3jGoHUqkwM5qfp'">arena10</button>
+                <button class="btn6" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/iM8bscSdjLg?si=yKOwz_uSv5bz6kg9'">arena11</button>
+                <button class="btn12" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/ADfr7ZkjJmQ?si=_6-j5QC6I0nL8V6B'">arena12</button>
+              <style>
+                button.btn1 {
+                  position: absolute;
+                  top: 235px;
+                  left : 22px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
 
-  
-
-  <script>
-    $(document).ready(function(){
-      $('.tab_btn li').click(function(){
-        var value = $(this).find('a').attr('href');
-        $('.tab_container .content').hide();
-        $('.tab_container').find(value).show();
-        $(this).addClass('active').siblings().removeClass('active')
-        return false;
-      });
-    });
-    </script>
+                button.btn2 {
+                  position: absolute;
+                  top: 360px;
+                  left : 22px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn3 {
+                  position: absolute;
+                  top: 480px;
+                  left : 22px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn4 {
+                  position: absolute;
+                  top: 600px;
+                  left : 22px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn5 {
+                  position: absolute;
+                  top: 720px;
+                  left : 22px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn6 {
+                  position: absolute;
+                  top: 845px;
+                  left : 22px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn7 {
+                  position: absolute;
+                  top: 235px;
+                  left : 313px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn8 {
+                  position: absolute;
+                  top: 360px;
+                  left : 313px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn9 {
+                  position: absolute;
+                  top: 480px;
+                  left : 313px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn10 {
+                  position: absolute;
+                  top: 600px;
+                  left : 313px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn11 {
+                  position: absolute;
+                  top: 720px;
+                  left : 313px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+                button.btn12 {
+                  position: absolute;
+                  top: 845px;
+                  left : 313px; 
+                  border-radius: 10px;
+                  width: 265px;
+                  height: 105px;
+                  opacity:0;
+                }
+        
+                 </style>
+              </div>
+            </li>
+            <li id="tab-2">
+              <div data-tab="tab-2" class="on"><img src="챔스.jpg"style="width:600px; margin:0px;"/ alt="">
+              <button class="btn13" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/ef5Bage-1q4?si=zg0FfpWj6A6Xw-hl'">arena1</button>
+              <button class="btn14" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/dKmquqNO4Hs?si=QtVL-EHQr9-CFoKA'">arena2</button>
+              <button class="btn15" type="button" name="buttonUp" style='cursor:pointer;' onclick="location.href='https://youtu.be/UDirGe8JTGA?si=dIbfuXC6HAIxmArX">arena3</button>
+            </div> 
+            <style>
+              button.btn13 {
+                position: absolute;
+                top: 400px;
+                left : 50px; 
+                border-radius: 20px;
+                width: 505px;
+                height: 160px;
+                opacity:0
+              }
+              button.btn14 {
+                position: absolute;
+                top: 590px;
+                left : 50px; 
+                border-radius: 20px;
+                width: 505px;
+                height: 160px;
+                opacity:0
+              }
+              button.btn15 {
+                position: absolute;
+                top: 785px;
+                left : 50px; 
+                border-radius: 20px;
+                width: 505px;
+                height: 160px;
+                opacity:0
+              }
+               </style>
+               <div style="background-color: #ffffff; 
+                           border-radius: 15px; 
+                          padding-top:5px ;
+                          width: 130px; 
+                          height: 21px;
+                          text-align: center;
+                          font-size: 80%;
+                          margin-top: -960px;
+                          margin-left: 20px;
+                          position: relative;z-index: 10;
+                          ">
+                <div id="countdown"></div>
+</div>
 
 <script>
-  $(document).ready(function(){
-    $('.sub_tab_btn li').click(function(){
-      var value = $(this).find('a').attr('href');
-      $('.sub_tab_container .content').hide();
-      $('.sub_tab_container').find(value).show();
-      $(this).addClass('active').siblings().removeClass('active')
-      return false;
+function getNextThursday() {
+  const now = new Date();
+  const dayOfWeek = now.getDay(); // 0: 일요일, 1: 월요일, ..., 6: 토요일
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+
+  // 다음 목요일 계산
+  let daysUntilThursday = (4 - dayOfWeek + 7) % 7;
+  if (daysUntilThursday === 0 && (hours > 16 || (hours === 16 && minutes > 0))) {
+      daysUntilThursday = 14; // 이번 주 목요일이 지나면 다음 격주 목요일
+  } else if (daysUntilThursday === 0) {
+      daysUntilThursday = 7; // 이번 주 목요일이 지나지 않았으면 다음 목요일
+  }
+
+  const nextThursday = new Date();
+  nextThursday.setDate(now.getDate() + daysUntilThursday);
+  nextThursday.setHours(16, 0, 0, 0); // 목요일 오후 4시
+
+  return nextThursday;
+}
+
+function padZero(num) {
+  return num.toString().padStart(2, '0'); // 2자리로 패딩
+}
+
+function updateCountdown() {
+  const nextThursday = getNextThursday();
+  const now = new Date();
+
+  // 카운트다운 계산
+  const timeDiff = nextThursday - now;
+
+  if (timeDiff > 0) {
+      const daysLeft = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      const hoursLeft = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
+      const minutesLeft = Math.floor((timeDiff / (1000 * 60)) % 60);
+      const secondsLeft = Math.floor((timeDiff / 1000) % 60);
+
+      document.getElementById('countdown').innerText = 
+          `마감 ${padZero(daysLeft)}일 ${padZero(hoursLeft)}:${padZero(minutesLeft)}:${padZero(secondsLeft)}`;
+  } else {
+      document.getElementById('countdown').innerText = "카운트다운이 끝났습니다!";
+  }
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown(); // 페이지 로드 시 초기화
+</script>
+            </li>
+            <li id="tab-3">
+              <div data-tab="tab-3" class="on"><img src="타이틀.jpg"style="width:600px; margin:0px;"/ alt="">
+              </div>
+            </li>
+            <li id="tab-4">
+              <div data-tab="tab-4" class="on"><img src="챔스.jpg"style="width:600px; margin:0px;"/ alt=""></div>
+            </li>
+            <li id="tab-5">
+              <div data-tab="tab-5" class="on">
+                <div>
+                  <div class="wrap">
+                    <!--tab 버튼-->
+                    <ul class="sub_tab_btn">
+                      <li class="active"><a href="#sub_tab01">
+                        <p>
+                          <span>레이드</span>
+                        </p>
+                      </a></li>
+                      <li><a href="#sub_tab02">
+                        <p>
+                          <span>랜덤챌린지</span >
+                        </p>
+                      </a></li>
+                      
+                      <li><a href="#sub_tab03">
+                        <p>
+                          <span>길드요리</span>
+                        </p>
+                      </a></li>
+                      
+                      <li><a href="#sub_tab04">
+                        <p>
+                          <span>젤리점수</span>
+                        </p>
+                      </a></li>
+                      <li><a href="#sub_tab05">
+                        <p>
+                          <span>소매넣기</span>
+                        </p>
+                      </a></li>
+                    </ul>
+                    
+                    <!--tab 내용-->
+                    <div class="sub_tab_container">
+                      <div class="content" id="sub_tab01">
+                        <style>
+                          .rounded-box {
+                              border: 4px solid #000000; /* 테두리 색상 */
+                              border-radius: 10px; /* 둥근 모서리 */
+                              padding: 0px; /* 내부 여백 */
+                              display: inline-block; /* 박스 크기 조정 */
+                              font-family: 'CookieRun';
+                          }
+                          button {
+                              padding: 5px 10px;
+                              font-size: 16px;
+                              border: none;
+                              border-radius: 5px;
+                              background-color: #ffffff; /* 버튼 색상 */
+                              color: rgb(0, 0, 0);
+                              cursor: pointer;
+                              font-family: 'CookieRun';                              
+                          }
+                          button:hover {
+                              background-color: #ffcdcf; /* 버튼 호버 색상 */
+                          }
+                          .copyText {
+                              display: none; /* 텍스트 숨기기 */
+                          }
+                          .message {
+                              padding-top: 5px;
+                              color: rgb(0, 0, 0);
+                              background-color: #ffcdcf;
+                              display: none; /* 메시지 숨기기 */
+                          }
+                      </style>
+                      <div class="rounded-box">
+                        <div class="copyText" id="text1">가나다라</div>
+                        <button class="copyButton" data-target="text1">조합복사</button>
+                        <div class="message" id="message1">복사완료</div>
+                    </div>
+                
+                    <div class="rounded-box">
+                        <div class="copyText" id="text2">마바사아</div>
+                        <button class="copyButton" data-target="text2">조합복사</button>
+                        <div class="message" id="message2">복사완료</div>
+                    </div>
+                
+                    <div class="rounded-box">
+                        <div class="copyText" id="text3">자차카타</div>
+                        <button class="copyButton" data-target="text3">조합복사</button>
+                        <div class="message" id="message3">복사완료</div>
+                    </div>
+                
+                    <script>
+                        const buttons = document.querySelectorAll('.copyButton');
+                
+                        buttons.forEach(button => {
+                            button.addEventListener('click', function() {
+                                const targetId = this.getAttribute('data-target');
+                                const textToCopy = document.getElementById(targetId).innerText;
+                                const messageId = 'message' + targetId.charAt(targetId.length - 1); // 메시지 ID 생성
+                
+                                navigator.clipboard.writeText(textToCopy)
+                                    .then(() => {
+                                        const message = document.getElementById(messageId);
+                                        message.style.display = 'block'; // 메시지 표시
+                                        setTimeout(() => {
+                                            message.style.display = 'none'; // 2초 후 메시지 숨기기
+                                        }, 2000);
+                                    })
+                                    .catch(err => {
+                                        console.error('복사 실패:', err);
+                                    });
+                            });
+                        });
+                    </script>
+
+                      </div>
+                      <div class="content" id="sub_tab02">
+                        <div>
+                          내용02
+                        </div>
+                      </div>
+                      <div class="content" id="sub_tab03">
+                        <div>
+                          <img src="요리도감.jpg"style="width:600px; margin-top:-61px;"/ alt="">
+                        </div>
+                      </div>
+                      <div class="content" id="sub_tab04">
+                        <div>
+                          내용04 내용04 내용04 내용04 내용04 내용04
+                        </div>
+                      </div>
+                      <div class="content" id="sub_tab05">
+                        <div>
+                          내용01 내용01 내용01 내용01 내용01 내용01
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </main>
+
+    
+    <script>
+      $(document).ready(function(){
+        $('.sub_tab_btn li').click(function(){
+          var value = $(this).find('a').attr('href');
+          $('.sub_tab_container .content').hide();
+          $('.sub_tab_container').find(value).show();
+          $(this).addClass('active').siblings().removeClass('active')
+          return false;
+        });
+      });
+
+      $(document).ready(function () {
+    $(".tab_menu li").click(function () {
+        var $this = $(this),
+            tabId = $this.data("tab"),
+            tabIndex = $this.index();
+
+        $(".tab_menu li, .tab_content li").removeClass("on");
+
+        $this.addClass("on");
+        $("#"+tabId).addClass("on");
+
+        $(".tab_menu li").each(function (content) {
+            $(this).find("img").attr("src", $(this).find("img").attr("src").replace("_off","_on"));
+            
+            if (tabIndex != content) {
+                $(this).find("img").attr("src", $(this).find("img").attr("src").replace("_on","_off"));
+            }
+        });
     });
-  });
-  </script>
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </script>
+</body>
 </html>

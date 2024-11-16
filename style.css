@@ -1,67 +1,60 @@
-<style>
+@charset "uth-8";
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/CookieRun/CookieRun.css');
+
+*{margin:0;padding:0}
+ul,li{list-style:none}
+
+.container{margin-top:0px;text-align:center}
+
+/* 탭메뉴 공통 */
+.tab_menu, .tab_content{width:600px;margin:px auto 0}
+.tab_menu li, .tab_content li{border:0px solid #000}
+
+/* 탭메뉴 버튼 */
+.tab_menu {display:table;table-layout:fixed;}
+.tab_menu li{display:table-cell;padding:10px 0;cursor:pointer} text
+.tab_menu li img{vertical-align:middle}
+.tab_menu li.on{background:#000000;text-align:center}
+.tab_menu li.on span {color: #ffffff};text-align:center
+.tab_menu li+li{border-left:none}
+.tab_menu li span{font-size: 17px;; color: #000000; display: inline-block; padding-right: 0px}
+
+
+/* 탭메뉴 컨텐츠 */
+.tab_content li{display:none;}
+.tab_content li.on{display:block}
+
+/*sub탭메뉴 디자인*/
+.wrap{width: 600px; height: 40px; margin: 0px;  background: #ffffff ;position: relative;z-index: 10;}
+.sub_tab_btn{font-size: 0}
+.sub_tab_btn > li{border-radius: 15px;display: inline-block; width: 100px; height: 40px;background:#eee7e7; line-height: 0px; text-align: center ;margin: 9px;margin-top: 10px;position: relative;z-index: 10;}
+.sub_tab_btn > li:last-child{margin-right: 0}
+.sub_tab_btn p{font-size: 16px;padding-top : 20px ; color: #000000;position: relative;z-index: 10;}
+.sub_tab_btn span{font-size: 16px; color: #000000; display: inline-block; padding-right: 0px ;position: relative;z-index: 10;}
+
+/*내용*/
+.sub_tab_container{width: 100%; height: 850px;position: relative;z-index: 0;}
+.sub_tab_container > div{width: 100%; height: 850px; background:#ffffff; padding: 0px; color: #000;position: relative;z-index: 0;}
+
+/*sub_tab버튼 클릭했을 때*/
+.sub_tab_btn > li.active{background: #f7ffdb; position: relative;z-index: 10;}
+.sub_tab_btn > li.active p{font-size: 16px; color: #000000}
+.sub_tab_btn > li.active span{color: #000000}
+.sub_tab_btn > li.active a:before{content: ''; width: 0dvb; height: 0px; background: #FFFADE; display: inline-block; position: absolute;border-radius: 0%; bottom:3px;}
+
+
 @font-face {
   font-family: 'CookieRun';
   font-weight: 400;
   font-style: normal;
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot');
-  src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot?#iefix') format('embedded-opentype'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff') format('woff'),
-       url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.ttf') format("truetype");
   font-display: swap;
-} 
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/CookieRun/CookieRun-Regular.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/fonts-archive/CookieRun/CookieRun-Regular.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/fonts-archive/CookieRun/CookieRun-Regular.otf') format('opentype'),
+       url('https://cdn.jsdelivr.net/gh/fonts-archive/CookieRun/CookieRun-Regular.ttf') format('truetype');
+}
+
 body{
 font-family: 'CookieRun';
 }
-
-/*reset*/
-* {margin: 0; padding: 0; box-sizing: border-box; /*font-weight:600;*/}
-li {list-style: none;}
-img {border: 0; outline: 0}
-a {text-decoration: none; color:#333;}
-button, fieldset, input{border: 0; outline: 0; background: none;}
-button {cursor: pointer;}
-table {border-collapse: collapse; border-spacing: 0}
-caption, legend {font-size: 0; color:transparent; text-indent: -9999px; overflow: hidden;}
-body,html{height: 100%;}
-
-/*탭메뉴 디자인*/
-.wrap{width: 600px; height: 40px; margin: 0px;  background: #ffffff ;}
-.tab_btn{font-size: 0}
-.tab_btn > li{display: inline-block; width: 120px; height: 40px;background: #000000; line-height: 0px; text-align: center ;margin-right: 0px}
-.tab_btn > li:last-child{margin-right: 0}
-.tab_btn p{font-size: 16px;padding-top : 20px ;font-weight: bold; color: #ffffff}
-.tab_btn span{font-size: 16px; font-weight:600px; color: #ffffff; display: inline-block; padding-right: 0px}
-
-/*내용*/
-.tab_container{width: 100%; height: 950px;overflow: hidden;}
-.tab_container > div{width: 100%; height: 190px; background:#ffffff; padding: 0px; color: #000;}
-
-/*tab버튼 클릭했을 때*/
-.tab_btn > li.active{background: #ffffff; position: relative;}
-.tab_btn > li.active p{font-size: 16px; font-weight: bold; color: #000000}
-.tab_btn > li.active span{color: #000000}
-.tab_btn > li.active a:before{content: ''; width: 0dvb; height: 0px; background: #FFFADE; display: inline-block; position: absolute;border-radius: 0%; bottom:3px;}
-</style>
-
-
-
-
-/*sub탭메뉴 디자인*/
-.wrap{width: 600px; height: 40px; margin: 0px;  background: #ffffff ;}
-.sub_tab_btn{font-size: 0}
-.sub_tab_btn > li{border-radius: 15px;display: inline-block; width: 100px; height: 40px;background:#eee7e7; line-height: 0px; text-align: center ;margin: 9px;margin-top: 5px;}
-.sub_tab_btn > li:last-child{margin-right: 0}
-.sub_tab_btn p{font-size: 16px;padding-top : 20px ;font-weight: bold; color: #000000}
-.sub_tab_btn span{font-size: 16px; font-weight:600px; color: #000000; display: inline-block; padding-right: 0px}
-
-/*내용*/
-.sub_tab_container{width: 100%; height: 800px;overflow: hidden;}
-.sub_tab_container > div{width: 100%; height: 190px; background:#ffffff; padding: 0px; color: #000;}
-
-/*sub_tab버튼 클릭했을 때*/
-.sub_tab_btn > li.active{background: #f7ffdb; position: relative;}
-.sub_tab_btn > li.active p{font-size: 16px; font-weight: bold; color: #000000}
-.sub_tab_btn > li.active span{color: #000000}
-.sub_tab_btn > li.active a:before{content: ''; width: 0dvb; height: 0px; background: #FFFADE; display: inline-block; position: absolute;border-radius: 0%; bottom:3px;}
 
